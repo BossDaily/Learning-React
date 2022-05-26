@@ -1,8 +1,9 @@
 import React from "react";
+import NavBar from "./Nav";
 
 const App = () => {
     return (
-        <div>fard</div>
+        <NavBar />
     )
 }
 
