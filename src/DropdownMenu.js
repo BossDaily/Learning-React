@@ -7,7 +7,7 @@ const DropdownMenu = () => {
 
     const DropdownItem = (props) => {
         return(
-            <a href="#" className="menu-item">
+            <a href="#" className="menu-item" onClick={() => props.goToMenu}>
                 <span className="icon-button">{props.leftIcon}</span>
 
                 {props.children}
@@ -20,6 +20,15 @@ const DropdownMenu = () => {
     return(
         <div className="dropdown">
             <CSSTransition in={activeMenu === 'main'} unmountOnExit timeout={500} classNames="menu-primary">
+                <div className="menu">
+                    <DropdownItem>You nerd</DropdownItem>
+                    <DropdownItem leftIcon={'🤓'} rightIcon={'👉'}>
+                        Fard
+                    </DropdownItem>
+                </div>
+            </CSSTransition>
+
+            <CSSTransition in={activeMenu === 'settings'} unmountOnExit timeout={500} classNames="menu-secondary">
                 <div className="menu">
                     <DropdownItem>You nerd</DropdownItem>
                     <DropdownItem leftIcon={'🤓'} rightIcon={'👉'}>
