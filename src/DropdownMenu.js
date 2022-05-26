@@ -4,6 +4,7 @@ const DropdownMenu = () => {
     const DropdownItem(props) = () => {
         return(
             <a href="#" className="menu-item">
+                <span className="icon-button">{props.leftIcon}</span>
                 {props.children}
             </a>
         )
