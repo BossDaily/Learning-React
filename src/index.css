@@ -63,4 +63,10 @@ a {
     padding: 5px;
     margin: 2px;
     display:flex;
+    transition: filter 300ms;
+}
+
+.icon-button:hover {
+    filter: brightness(1.2);
+    
 }
