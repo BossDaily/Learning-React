@@ -6,7 +6,9 @@ import NavItem from "./NavItem";
 const App = () => {
     return (
         <NavBar>
-            <NavItem icon="🤓"/>
+            <NavItem icon="🤓">
+                <p>fard</p>
+            </NavItem>
         </NavBar>
     )
 }
