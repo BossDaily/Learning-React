@@ -2,12 +2,13 @@ import React from "react";
 import NavBar from "./Nav";
 import './index.css';
 import NavItem from "./NavItem";
+import DropdownMenu from "./DropdownMenu";
 
 const App = () => {
     return (
         <NavBar>
             <NavItem icon="🤓">
-                <p>fard</p>
+                <DropdownMenu />
             </NavItem>
         </NavBar>
     )
