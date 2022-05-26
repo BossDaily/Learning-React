@@ -16,6 +16,9 @@ const DropdownMenu = () => {
     return(
         <div className="dropdown">
             <DropdownItem>You nerd</DropdownItem>
+            <DropdownItem leftIcon={'🤓'} rightIcon={'👉'}>
+
+            </DropdownItem>
         </div>
     )
 }
