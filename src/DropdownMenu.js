@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const DropdownMenu = () => {
-    const DropdownItem(props) = () => {
+    const DropdownItem = (props) => {
         return(
             <a href="#" className="menu-item">
                 <span className="icon-button">{props.leftIcon}</span>
