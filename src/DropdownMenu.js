@@ -15,7 +15,7 @@ const DropdownMenu = () => {
 
     return(
         <div className="dropdown">
-
+            <DropdownItem>You nerd</DropdownItem>
         </div>
     )
 }
