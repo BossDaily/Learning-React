@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import { CSSTransition } from "react-transition-group";
 
 const DropdownMenu = () => {
+
+    const [activeMenu, setActiveMenu] = useState('main')
+
     const DropdownItem = (props) => {
         return(
             <a href="#" className="menu-item">
@@ -15,10 +19,14 @@ const DropdownMenu = () => {
 
     return(
         <div className="dropdown">
-            <DropdownItem>You nerd</DropdownItem>
-            <DropdownItem leftIcon={'🤓'} rightIcon={'👉'}>
-
-            </DropdownItem>
+            <CSSTransition in={activeMenu === 'main'} unmountOnExit timeout={500} classNames="menu-primary">
+                <div className="menu">
+                    <DropdownItem>You nerd</DropdownItem>
+                    <DropdownItem leftIcon={'🤓'} rightIcon={'👉'}>
+                        Fard
+                    </DropdownItem>
+                </div>
+            </CSSTransition>
         </div>
     )
 }
